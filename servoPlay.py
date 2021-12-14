@@ -15,7 +15,7 @@ from approxeng.input.selectbinder import ControllerResource
 # Bus 1 (pins 5, 3) is board SCL, SDA in the jetson definition file
 # Default is to Bus 1; We are using Bus 0, so we need to construct the busio first ...
 print("Initializing Servos")
-i2c_bus0=(busio.I2C(board.SCL_1, board.SDA_1))
+i2c_bus1=(busio.I2C(board.SCL_2, board.SDA_2))
 print("Initializing ServoKit")
 kit = ServoKit(channels=16, i2c=i2c_bus0)
 # kit[0] is the bottom servo

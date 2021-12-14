@@ -10,3 +10,4 @@ echo ""
 echo "Gamepad support installed."
 echo ""
 
+cd
